@@ -2,8 +2,12 @@
   "name": "asarina",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsup",
+    "check": "biome check",
+    "spell": "cspell lint --no-progress .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/uzmoi/asarina/issues"
   },
-  "homepage": "https://github.com/uzmoi/asarina#readme"
+  "homepage": "https://github.com/uzmoi/asarina#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "cspell": "^8.13.1",
+    "lefthook": "^1.7.11",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
 }
