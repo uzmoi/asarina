@@ -4,6 +4,16 @@
   "description": "",
   "type": "module",
   "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "tsup",
     "check": "biome check",
