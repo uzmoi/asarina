@@ -20,8 +20,12 @@
     "enabled": true,
     "rules": {
       "all": true,
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off"
+      },
       "style": {
-        "noDefaultExport": "off"
+        "noDefaultExport": "off",
+        "useBlockStatements": "off"
       }
     }
   },
