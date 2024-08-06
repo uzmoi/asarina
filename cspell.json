@@ -2,5 +2,5 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "useGitignore": true,
   "ignorePaths": ["package-lock.json"],
-  "words": ["asarina", "biomejs", "lefthook", "tsup", "uzmoi"]
+  "words": ["asarina", "biomejs", "csstype", "lefthook", "tsup", "uzmoi"]
 }
