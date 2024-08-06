@@ -6,7 +6,7 @@ on:
     tags: [ v*.*.* ]
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: npm
+          registry-url: https://registry.npmjs.org/
 
       - run: npm ci
       - run: npm run build
